@@ -1,6 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import math
 
 # Load data from CSV files, skipping the first column, setting field format as string, and removing NA values
 customers_zip = pd.read_csv("customers_zip.csv", usecols=["customer_id", "zip_cust"], dtype=str).dropna()
